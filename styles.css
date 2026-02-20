@@ -60,28 +60,25 @@ nav a { text-decoration: none; color: var(--text); margin-left: 1rem; font-weigh
 .a-card i { font-size: 1.8rem; color: var(--gold); margin-bottom: 8px; }
 .a-card p { font-size: 0.75rem; font-weight: 600; color: var(--navy); }
 
-/* Proximidades */
+/* Proximidades e Mapa */
 .proximity-desc { text-align: center; width: 100%; margin-bottom: 25px; }
 .proximity-desc p { color: var(--link-blue); font-weight: 600; font-size: 0.9rem; }
 .booking-proximity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: left; }
 .proximity-col h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
 .proximity-list { list-style: none; }
 .proximity-list li { display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.8rem; color: #474747; border-bottom: 1px solid #f0f0f0; }
-.extra-margin { margin-top: 20px; }
-.proximity-note { text-align: center; width: 100%; margin-top: 30px; font-size: 0.7rem; color: #6b6b6b; font-style: italic; }
+.map-wrapper { margin: 40px auto 0; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%; }
 
 /* Anfitriã */
 .host-wrapper { display: flex; align-items: center; justify-content: center; gap: 40px; margin-bottom: 40px; text-align: left; }
-.host-card { background: transparent; }
 .host-img { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 25px rgba(0,0,0,0.1); border: 3px solid #fff; }
 .host-profile { position: relative; }
-.host-badge { position: absolute; bottom: 8px; right: 8px; background: var(--navy); color: white; border-radius: 50%; padding: 5px; font-size: 1rem; border: 2px solid #fff; display: flex; }
+.host-badge { position: absolute; bottom: 8px; right: 8px; background: var(--navy); color: white; border-radius: 50%; padding: 5px; border: 2px solid #fff; display: flex; }
 .host-bio { max-width: 500px; }
 .host-bio h3 { font-size: 1.6rem; color: var(--navy); margin-bottom: 5px; }
 .host-tag { color: var(--gold); font-weight: 700; text-transform: uppercase; font-size: 0.75rem; margin-bottom: 12px; }
 .host-features { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 15px; }
 .host-features li { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.8rem; color: var(--navy); }
-.host-features i { color: #22c55e; font-size: 1rem; }
 
 /* Bloco de Nota */
 .final-score-box {
@@ -98,7 +95,6 @@ nav a { text-decoration: none; color: var(--text); margin-left: 1rem; font-weigh
 /* Rodapé */
 footer { background: var(--navy); color: white; padding: 40px 5%; text-align: center; }
 .logo-footer { font-size: 1.2rem; font-weight: 800; color: var(--gold); letter-spacing: 2px; margin-bottom: 10px; display: block; }
-.logo-footer span { color: var(--gold); font-weight: 300; }
 .copy { margin-top: 20px; font-size: 0.6rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 2px; }
 
 /* --- RESPONSIVIDADE (MOBILE) --- */
@@ -107,22 +103,14 @@ footer { background: var(--navy); color: white; padding: 40px 5%; text-align: ce
     nav { margin-top: 15px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
     nav a { margin: 0 5px; font-size: 0.65rem; }
     .btn-reserva { margin-top: 10px; width: 80%; text-align: center; }
-
     .hero h1 { font-size: 2rem; }
-    .section-title { font-size: 1.5rem; }
-
     .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: auto; }
     .g-photo { height: 150px; }
-
     .amenities-container { grid-template-columns: repeat(2, 1fr); }
     .booking-proximity-grid { grid-template-columns: 1fr; gap: 20px; }
-
     .host-wrapper { flex-direction: column; text-align: center; gap: 20px; }
-    .host-bio { text-align: center; }
     .host-features { grid-template-columns: 1fr; }
-
     .score-card { flex-direction: column; text-align: center; }
-    .score-card h3, .score-card p { text-align: center; }
-    
     .btn-final-booking { width: 100%; font-size: 0.7rem; }
+    .map-wrapper { height: 300px; }
 }
